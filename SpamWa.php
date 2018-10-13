@@ -1,9 +1,9 @@
 <?php
-echo "=====================";
+echo "=====================\n";
 echo "Im Tobz\n";
 echo "From TobzCyberTeam\n";
 echo "Script By SGB Team\n";
-echo "=====================\n";
+echo "=====================\n\n";
 echo "Masukan Nomor 081271xxxxxx\nInput : ";
 $nomer = trim(fgets(STDIN));
 if(strlen($nomer)==11){
