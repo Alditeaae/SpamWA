@@ -2,9 +2,9 @@
 echo "=====================";
 echo "Im Tobz\n";
 echo "From TobzCyberTeam\n";
-echo "Script By SGB Team";
-echo "=====================";
-echo "Masukan Nomor\nInput : ";
+echo "Script By SGB Team\n";
+echo "=====================\n";
+echo "Masukan Nomor 081271xxxxxx\nInput : ";
 $nomer = trim(fgets(STDIN));
 if(strlen($nomer)==11){
 	$nomer = str_replace("0","62".$nomer);
@@ -14,7 +14,7 @@ if(strlen($nomer)==11){
 echo "Nomor : $nomer (y/n)";
 $cek = trim(fgets(STDIN));
 if($cek=="n") exit("Berhenti\n");
-echo "Jumlah?\nInput : ";
+echo "Jumlah : (1-100)\nInput : ";
 $jumlah = trim(fgets(STDIN));
 for($a=0;$a<$jumlah;$a++) {
 	$rand1 = md5(rand(12345678,98765432));
@@ -55,6 +55,5 @@ Cookie: identity=".$rand1."; browser_id=".$rand2."; _ga=GA1.2.1024758930.1531960
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $ar);
 	$asw = curl_exec($ch);
 	curl_close($ch);
-	print $a.$nomer." [Mengirim]\n";
-	print "Success";
+	print $a.$nomer." << Mengirim\n";
 }
